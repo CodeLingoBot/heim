@@ -38,7 +38,7 @@ type console struct {
 	kms     security.KMS
 }
 
-// Implement Session and Identity.
+// Identity; Implement Session and Identity.
 // TODO: log details about the client
 func (c *console) Identity() proto.Identity { return (*consoleIdentity)(c) }
 func (c *console) ID() string               { return "console" }
